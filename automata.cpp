@@ -2,13 +2,8 @@
 #include <string>
 #include "automata.h"
 
-using namespace std; // yes using namespace std
+using namespace std; 
 
-// NOTE: for directions on what to do with all of these TODOs below,
-// please refer to the header file, automata.h.
-
-// prev returns the index before i. If i is 0, it should return
-// (string_size - 1).
 int prev(int i, int string_size) {
   // declares and initializes a variable to be returned at the end
   int result = i;
@@ -85,18 +80,6 @@ string make_next_generation(string in) {
   return next_gen;
 }
 
-
-
-// generate runs make_next_generation several times using the
-// initial_state as the first state; for subsequent calls it uses the
-// return value from the previous invocation of
-// `make_next_generation`.
-//
-// `num_generations` is the number of times to invoke
-// `make_next_generation`.
-//
-// This should print the initial state and every following generation
-// to the console using cout.
 void generate(string initial_state, int num_generations) {
   cout << initial_state << endl;
   for(int i = 0; i < num_generations; i++)
