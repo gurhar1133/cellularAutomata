@@ -17,14 +17,12 @@ std::string balanced_in_middle(int n) {
 }
 
 int main() {
-  // N spaces, an octothorpe, then N more spaces. This input will
-  // give a Sierpinski triangle if you've implemented everything in
-  // automata.cpp correclty :)
+  // This input will
+  // give a Sierpinski triangle
   // std::string in = "                                                                #                                                               ";
 
   
-  // here is an alternate input. play around with it, try different
-  // values.
+  
   std::string in= "#       #       ##      #       #";
 
   //std::string in = balanced_in_middle(60);
